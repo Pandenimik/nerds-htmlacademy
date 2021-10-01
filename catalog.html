@@ -21,11 +21,12 @@
       <a href="#">Корзина</a>      
     </nav>    
   </header>
+
   <main>
     <h1>Магазин готовых шаблонов</h1>
     <section>
       <h2>Фильтр товаров</h2>
-      <form action="https://echo.htmlacademy.ru" metod="post">
+      <form action="https://echo.htmlacademy.ru" metod="get">
         <fieldset>
           <legend>СТОИМОСТЬ:</legend>
           <input id="priceslider" type="range" min="0" max="15000" step="1"><br>
@@ -57,11 +58,11 @@
       <h2>Сортировка товаров</h2>
       <span>Сортировать:</span>
       <ul>
-        <li><a href="#">ПО ЦЕНЕ</a></li>
-        <li><a href="#">ПО ТИПУ</a></li>
-        <li><a href="#">ПО НАЗВАНИЮ</a></li>
-        <li><a href="#">По возростанию</a></li>
-        <li><a href="#">По убыванию</a></li>
+        <li><button value="by-price">ПО ЦЕНЕ</a></li>
+        <li><button value="by-type">ПО ТИПУ</a></li>
+        <li><button value="by-name">ПО НАЗВАНИЮ</a></li>
+        <li><button value="ascending">По возрастанию</a></li>
+        <li><button value="descending">По убыванию</a></li>
       </ul> 
     </section>
     <section>
@@ -114,6 +115,7 @@
       <input type="button" value="НАПИШИТЕ НАМ">
     </section>
   </main>
+
   <footer>
     <h2>Мы в соцсетях</h2>
     <figure>
@@ -124,6 +126,7 @@
     <p>Давайте дружить, это выгодно!</p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
+  
 </body>
 
 </html>
