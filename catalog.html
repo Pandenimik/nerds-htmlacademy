@@ -28,27 +28,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>                                         
-    <nav>
-      <a href="index.html">
+<body class="page-body">
+  <header class="main-header">                                         
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
         <img src="img/header/nerds-logo.svg" width="160" height="65" alt="Логотип сайта Нёрдс">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="index.html">СТУДИЯ</a></li>
         <li><a href="#">КЛИЕНТЫ</a></li>
         <li><a>МАГАЗИН</a></li>
         <li><a href="#">КОНТАКТЫ</a></li>
       </ul>
-      <a href="#">Корзина</a>      
+      <a class="basket-link" href="#">Корзина</a>      
     </nav>    
   </header>
 
-  <main>
+  <main class="center">
     <h1>Магазин готовых шаблонов</h1>
     <section>
       <h2>Фильтр товаров</h2>
@@ -77,7 +77,7 @@
             <li><label><input type="checkbox" name="busket"> Корзина</label></li>
           </ul>
         </fieldset>
-        <input type="submit" value="ПОКАЗАТЬ">
+        <input class="button" type="submit" value="ПОКАЗАТЬ">
       </form>
     </section>
     <section>
@@ -180,27 +180,30 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="contacts">
       <h2>Контакты</h2>
-      <p>NERDS DESIGN STUDIO</p>
-      <p>1911186, Санкт-Петербург,<br>
+      <p class="bold-text">NERDS DESIGN STUDIO</p>
+      <p class="basic-text">1911186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел. +7(812)275-75-75</p>
-      <input type="button" value="НАПИШИТЕ НАМ">
+      <p class="basic-text">тел. +7(812) 275-75-75</p>
+      <input class="button" type="button" value="НАПИШИТЕ НАМ">
+      <figure>
+        <img src="img/contacts/map.png" alt="Отметка местоположения нашего офиса">
+      </figure>
     </section>
   </main>
 
-  <footer>    
+  <footer >    
     <h2>Мы в соцсетях</h2>
     <figure>
-      <ul>
-        <li><a href=""><img src="img/footer/vk-icon.svg" width="81" height="81" alt="Ссылка на нашу страницу в вконтакте"></a></li>
-        <li><a href=""><img src="img/footer/fb-icon.svg" width="81" height="81" alt="Ссылка на нашу страницу в facebook"></a></li>
-        <li><a href=""><img src="img/footer/insta-icon.svg" width="81" height="81" alt="Ссылка на нашу страницу в Instagram"></a></li>
+      <ul class="social-logo-list">
+        <li class="social-logo-item"><a href=""><img src="img/footer/vk-icon.svg" alt="Ссылка на нашу страницу в вконтакте"></a></li>
+        <li class="social-logo-item"><a href=""><img src="img/footer/fb-icon.svg" alt="Ссылка на нашу страницу в facebook"></a></li>
+        <li class="social-logo-item"><a href=""><img src="img/footer/insta-icon.svg" alt="Ссылка на нашу страницу в Instagram"></a></li>
       </ul>
     </figure>
-    <p>Давайте дружить, это выгодно!</p>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <p class="footer-head-text">Давайте дружить, это выгодно!</p>
+    <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   
 </body>

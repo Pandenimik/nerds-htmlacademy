@@ -1,11 +1,18 @@
 :root {
     --basic-black: #000000;
     --basic-white: #ffffff;
+    --opacity-white-text: rgba(255, 255, 255, 0.3);
     --main-text: #283136;
     --dark-grey: #444444;
     --basic-red: #fb565a;
+    --hover-red: #e74246;
+    --focus-red: #d7373b;
     --basic-green: #00ca74;
+    --hover-green: #00bc6c;
+    --focus-green: #00aa62;
     --basic-yellow: #efc849;
+    --hover-yelow: #eab534;
+    --focus-yelow: #e5a722;
     --basic-grey: #eeeeee;
 
 }
@@ -17,9 +24,28 @@ body {
     background-color: var(--basic-white);
 }
 
+h1,
+h2 {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: var(--basic-black);
+}
+
+a:hover {
+    color: var(--basic-red);
+}
+
+a:focus {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+a:active {
+    color: var(--basic-black);
+    border-bottom: var(--basic-red);
 }
 
 img {
@@ -27,7 +53,7 @@ img {
     height: auto;
 }
 
-p {
+.main-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -62,8 +88,71 @@ p {
     padding: 1em 2.5em 1em 2.5em;
 }
 
+.button:hover {
+    background-color: var(--hover-red);
+}
+
+.button:focus {
+    background-color: var(--focus-red);
+    color: var(--opacity-white-text);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
 .services-list {
     list-style: none;
+}
+
+.services-item h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.about-us .bold-text {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+    color: var(--basic-black);
+}
+
+.about-us h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+.works-item {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--main-text);
+    font-weight: 400;
+}
+
+.table-num {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.table-text {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--main-text);
+}
+
+.contacts .bold-text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+.contacts .basic-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--dark-grey);
 }
 
 .social-logo-list {
@@ -86,13 +175,32 @@ p {
     background-color: var(--basic-green);
 }
 
+.green-bg:hover {
+    background-color: var(--hover-green);
+}
+
+.green-bg:focus {
+    background-color: var(--focus-green);
+    color: var(--opacity-white-text);
+}
+
+
 .yellow-bg {
     background-color: var(--basic-yellow);
 }
 
+.yellow-bg:hover {
+    background-color: var(--hover-yelow);
+}
+
+.yellow-bg:focus {
+    background-color: var(--focus-yelow);
+    color: var(--opacity-white-text);
+}
+
 .footer-head-text{
     color:var(--basic-black);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 36px;
 
@@ -100,4 +208,7 @@ p {
 
 .footer-text {
     color: var(--dark-grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 }
