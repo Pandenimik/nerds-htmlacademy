@@ -44,7 +44,7 @@
         <li><a>МАГАЗИН</a></li>
         <li><a href="#">КОНТАКТЫ</a></li>
       </ul>
-      <a class="basket-link" href="#">Корзина</a>      
+      <a class="basket-link" href="#">КОРЗИНА</a>      
     </nav>    
   </header>
 
@@ -61,7 +61,7 @@
         </fieldset>
         <fieldset>
           <legend>СЕТКА:</legend>
-          <ul>
+          <ul class="grid-list">
             <li><label><input type="radio" name="grid" value="adaptive" checked> Адаптивная</label><br></li>
             <li><label><input type="radio" name="grid" value="fixed"> Фиксированная</label><br></li>
             <li><label><input type="radio" name="grid" value="rubber"> Резиновая</label></li>
@@ -69,7 +69,7 @@
         </fieldset>
         <fieldset>
           <legend>ОСОБЕННОСТИ:</legend>
-          <ul>
+          <ul class="features-list">
             <li><label><input type="checkbox" name="slider" checked> Слайдер</label><br></li>
             <li><label><input type="checkbox" name="block"> Блок преимуществ</label><br></li>
             <li><label><input type="checkbox" name="news" checked> Новости</label></li>
@@ -83,7 +83,7 @@
     <section>
       <h2>Сортировка товаров</h2>
       <span>Сортировать:</span>
-      <ul>
+      <ul class="sorting-buttons">
         <li>
           <button value="by-price">ПО ЦЕНЕ</button>
         </li>
@@ -103,7 +103,7 @@
     </section>
     <section>
       <h2>Каталог шаблонов сайтов</h2>
-      <ul>
+      <ul class="catalog-list">
         <li>
           <a href="#">
             <img src="img/catalog/img-sedona.png" width="358" height="578" alt="Sedona">
@@ -112,7 +112,7 @@
             <h3>SEDONA</h3>
           </a>
           <p>Информационный сайт для туристов</p>
-          <button value="sedona">9900</button>
+          <button class="button" value="sedona">9900</button>
         </li>
         <li>
           <a href="#">
@@ -122,7 +122,7 @@
             <h3>PINK APP</h3>
           </a>
           <p>Продуктовый лендинг приложения для IOS и Android</p>
-          <button value="pink">9900</button>
+          <button class="button" value="pink">9900</button>
         </li>
         <li>
           <a href="#">
@@ -132,7 +132,7 @@
             <h3>BARBERSHOP</h3>
           </a>
           <p>Сайт салона красоты. Для мужчин, да.</p>
-          <button value="borodinski">9900</button>
+          <button class="button" value="borodinski">9900</button>
         </li>
         <li>
           <a href="#">
@@ -142,7 +142,7 @@
             <h3>MISHKA</h3>
           </a>
           <p>Интернет-магазин вязаных игрушек</p>
-          <button value="mishka">9900</button>
+          <button class="button" value="mishka">9900</button>
         </li>
         <li>
           <a href="#">
@@ -152,7 +152,7 @@
             <h3>A PLUS</h3>
           </a>
           <p>Лендинг курсов повышения квалификации</p>
-          <button value="A+">9900</button>
+          <button class="button" value="A+">9900</button>
         </li>
         <li>
           <a href="#">
@@ -162,10 +162,10 @@
             <h3>КВАСТ</h3>
           </a>
           <p>Промо-сайт производителя крафтового квас</p>
-          <button value="kvast">9900</button>
+          <button class="button" value="kvast">9900</button>
         </li>
       </ul>
-      <ul>
+      <ul class="pages-list">
         <li>
           <a>1</a>
         </li>
@@ -187,7 +187,7 @@
         ул. Б. Конюшенная, д. 19/8</p>
       <p class="basic-text">тел. +7(812) 275-75-75</p>
       <input class="button" type="button" value="НАПИШИТЕ НАМ">
-      <figure>
+      <figure class="map-place">
         <img src="img/contacts/map.png" alt="Отметка местоположения нашего офиса">
       </figure>
     </section>
@@ -195,13 +195,11 @@
 
   <footer >    
     <h2>Мы в соцсетях</h2>
-    <figure>
-      <ul class="social-logo-list">
-        <li class="social-logo-item"><a href=""><img src="img/footer/vk-icon.svg" alt="Ссылка на нашу страницу в вконтакте"></a></li>
-        <li class="social-logo-item"><a href=""><img src="img/footer/fb-icon.svg" alt="Ссылка на нашу страницу в facebook"></a></li>
-        <li class="social-logo-item"><a href=""><img src="img/footer/insta-icon.svg" alt="Ссылка на нашу страницу в Instagram"></a></li>
-      </ul>
-    </figure>
+    <ul class="social-logo-list">
+      <li class="social-logo-item"><a href=""><img src="img/footer/vk-icon.svg" alt="Ссылка на нашу страницу в вконтакте"></a></li>
+      <li class="social-logo-item"><a href=""><img src="img/footer/fb-icon.svg" alt="Ссылка на нашу страницу в facebook"></a></li>
+      <li class="social-logo-item"><a href=""><img src="img/footer/insta-icon.svg" alt="Ссылка на нашу страницу в Instagram"></a></li>
+    </ul>
     <p class="footer-head-text">Давайте дружить, это выгодно!</p>
     <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
   </footer>
