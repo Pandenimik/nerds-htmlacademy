@@ -75,6 +75,10 @@ img {
     padding: 0px;
 }
 
+.banner {
+    background-color: var(--basic-grey);
+}
+
 .banner span {
     font-weight: 500;
     font-size: 55px;
