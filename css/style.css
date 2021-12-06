@@ -14,7 +14,9 @@
     --hover-yelow: #eab534;
     --focus-yelow: #e5a722;
     --basic-grey: #eeeeee;
-
+    --hover-grey: #dfdfdf;
+    --focus-grey: #d5d5d5;
+    --opacity-grey-text: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -52,6 +54,23 @@ h2 {
     border-bottom: var(--basic-red);
 }
 
+.sorting-button, 
+.arrow {
+    text-decoration: none;
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.sorting-button:hover,
+.arrow:hover {
+    opacity: 0.6;
+}
+
+.sorting-button:focus,
+.arrow:focus {
+    opacity: 1;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -68,6 +87,7 @@ img {
     font-weight: 500;
     line-height: 30px;
     color: var(--basic-black);
+    background-color: var(--basic-grey);
 }
 
 .site-navigation {
@@ -255,3 +275,19 @@ img {
 .pages-list {
     list-style: none;
 }
+
+.catalog-menu-button {
+    color: var(--basic-black);
+    background-color: var(--basic-grey);
+}
+
+.catalog-menu-button:hover {
+    background-color: var(--hover-grey);
+}
+
+.catalog-menu-button:focus {
+    background-color: var(--focus-grey);
+    color: var(--opacity-grey-text);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+

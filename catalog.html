@@ -62,22 +62,22 @@
         <fieldset>
           <legend>СЕТКА:</legend>
           <ul class="grid-list">
-            <li><label><input type="radio" name="grid" value="adaptive" checked> Адаптивная</label><br></li>
-            <li><label><input type="radio" name="grid" value="fixed"> Фиксированная</label><br></li>
-            <li><label><input type="radio" name="grid" value="rubber"> Резиновая</label></li>
+            <li><label><input class="radio" type="radio" name="grid" value="adaptive" checked> Адаптивная</label><br></li>
+            <li><label><input class="radio" type="radio" name="grid" value="fixed"> Фиксированная</label><br></li>
+            <li><label><input class="radio" type="radio" name="grid" value="rubber"> Резиновая</label></li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>ОСОБЕННОСТИ:</legend>
           <ul class="features-list">
-            <li><label><input type="checkbox" name="slider" checked> Слайдер</label><br></li>
-            <li><label><input type="checkbox" name="block"> Блок преимуществ</label><br></li>
-            <li><label><input type="checkbox" name="news" checked> Новости</label></li>
-            <li><label><input type="checkbox" name="galery"> Галерея</label><br></li>
-            <li><label><input type="checkbox" name="busket"> Корзина</label></li>
+            <li><label><input class="checkbox" type="checkbox" name="slider" checked> Слайдер</label><br></li>
+            <li><label><input class="checkbox" type="checkbox" name="block"> Блок преимуществ</label><br></li>
+            <li><label><input class="checkbox" type="checkbox" name="news" checked> Новости</label></li>
+            <li><label><input class="checkbox" type="checkbox" name="galery"> Галерея</label><br></li>
+            <li><label><input class="checkbox" type="checkbox" name="busket"> Корзина</label></li>
           </ul>
         </fieldset>
-        <input class="button" type="submit" value="ПОКАЗАТЬ">
+        <input class="button catalog-menu-button" type="submit" value="ПОКАЗАТЬ">
       </form>
     </section>
     <section>
@@ -85,19 +85,19 @@
       <span>Сортировать:</span>
       <ul class="sorting-buttons">
         <li>
-          <button value="by-price">ПО ЦЕНЕ</button>
+          <a href="#" class="sorting-button">ПО ЦЕНЕ</a>
         </li>
         <li>
-          <button value="by-type">ПО ТИПУ</button>
+          <a href="#" class="sorting-button">ПО ТИПУ</a>
         </li>
         <li>
-          <button value="by-name">ПО НАЗВАНИЮ</button>
+          <a href="#" class="sorting-button">ПО НАЗВАНИЮ</a>
         </li>
         <li>
-          <button value="ascending">По возрастанию</button>
+          <a href="#" class="arrow"><img src="img\down-arrow.png"></a>
         </li>
         <li>
-          <button value="descending">По убыванию</button>
+          <a href="#" class="arrow"><img src="img\up-arrow.png"></a>
         </li>
       </ul> 
     </section>
@@ -167,16 +167,16 @@
       </ul>
       <ul class="pages-list">
         <li>
-          <a>1</a>
+          <button class="button catalog-menu-button">1</button>
         </li>
         <li>
-          <a href="#">2</a>
+          <button class="button catalog-menu-button" href="#">2</button>
         </li>
         <li>
-          <a href="#">3</a>
+          <button class="button catalog-menu-button" href="#">3</button>
         </li>
         <li>
-          <a href="#">СЛЕДУЮЩАЯ</a>
+          <button class="button catalog-menu-button" href="#">СЛЕДУЮЩАЯ</button>
         </li>
       </ul>
     </section>
