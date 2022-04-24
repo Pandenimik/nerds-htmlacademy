@@ -26,9 +26,63 @@ body {
     background-color: var(--basic-white);
 }
 
-h1,
-h2 {
-    display: none; /* Нужно перескрыть */
+.page-body {
+  display: grid;
+  grid-template-areas: 
+    "main-header"
+    "main-body"
+    "main-footer";
+  grid-template-rows: 190px 1fr 225px;
+  min-height: 100%;
+}
+
+.main-header {
+  grid-area: main-header;
+}
+
+.main-body {
+  grid-area: main-body;
+}
+
+.main-footer {
+  grid-area: main-footer;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+
+
+h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  color: var(--basic-grey);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.center {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: 160px 1fr min-content;
 }
 
 .main-navigation a,
@@ -82,12 +136,16 @@ img {
     line-height: 24px;
     color:var(--main-text);
 }
+
+.main-header {
+  background-color: var(--basic-grey);
+}
+
 .main-navigation {
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
     color: var(--basic-black);
-    background-color: var(--basic-grey);
 }
 
 .site-navigation {
@@ -97,6 +155,7 @@ img {
 
 .banner {
     background-color: var(--basic-grey);
+    margin-bottom: 80px;
 }
 
 .banner span {
@@ -130,6 +189,9 @@ img {
 .services-list {
     list-style: none;
     padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 80px;
 }
 
 .services-item h3 {
@@ -198,6 +260,8 @@ img {
 .social-logo-list {
     list-style: none;
     padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .social-logo-item {
@@ -239,6 +303,11 @@ img {
     color: var(--opacity-white-text);
 }
 
+.map-place {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .footer-head-text{
     color:var(--basic-black);
     font-weight: 700;
@@ -252,6 +321,10 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+}
+
+.footer-text-area {
+  justify-self: center;
 }
 
 /* Дальше идет оформление catalog.html */
@@ -290,4 +363,3 @@ img {
     color: var(--opacity-grey-text);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
-
