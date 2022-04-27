@@ -18,6 +18,9 @@
     --focus-grey: #d5d5d5;
     --opacity-grey-text: rgba(0, 0, 0, 0.3);
 }
+.page {
+  height: 100%;
+}
 
 body {
     margin: 0;
@@ -51,8 +54,6 @@ body {
   align-items: center;
 }
 
-
-
 h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
@@ -83,6 +84,14 @@ hr {
 .main-navigation {
   display: grid;
   grid-template-columns: 160px 1fr min-content;
+  column-gap: 40px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--basic-black);
 }
 
 .main-navigation a,
@@ -141,21 +150,37 @@ img {
   background-color: var(--basic-grey);
 }
 
-.main-navigation {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 30px;
-    color: var(--basic-black);
-}
-
 .site-navigation {
     list-style: none;
     padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
 }
 
 .banner {
     background-color: var(--basic-grey);
     margin-bottom: 80px;
+}
+
+.banner__grid {
+  display: grid;
+  grid-template-areas: "banner__card banner__slider";
+  grid-template-columns: 380px 760px;
+  column-gap: 20px;
+}
+
+.banner__card {
+  grid-area: banner__card;
+  justify-content: stretch;
+}
+
+.banner__card > * {
+  margin-bottom: 25px;
+}
+
+.banner__slider {
+  grid-area: banner__slider;
 }
 
 .banner span {
@@ -243,6 +268,13 @@ img {
     padding: 0px;
 }
 
+.contacts {
+  display: grid;
+  grid-template-areas: "contacts";
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .contacts .bold-text {
     font-size: 18px;
     font-weight: 700;
@@ -255,6 +287,24 @@ img {
     font-weight: 400;
     line-height: 18px;
     color: var(--dark-grey);
+}
+
+.contacts__card {
+  background-color: var(--basic-white);
+  width: 319px;
+  height: 308px;
+  box-sizing: border-box;
+  grid-area: contacts;
+  z-index: 1;
+  align-self: center;
+  margin-left: 140px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.map-place {
+  grid-area: contacts;
+  margin: 0;
 }
 
 .social-logo-list {
@@ -303,10 +353,7 @@ img {
     color: var(--opacity-white-text);
 }
 
-.map-place {
-  width: 1440px;
-  margin: 0 auto;
-}
+
 
 .footer-head-text{
     color:var(--basic-black);
@@ -328,6 +375,40 @@ img {
 }
 
 /* Дальше идет оформление catalog.html */
+.catalog-header {
+  text-align: center;
+  background-color: var(--basic-grey);
+  padding-bottom: 108px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.catalog-header h1 {
+  font-size: 55px;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-areas: 
+    "filter sorter"
+    "filter catalog";
+  grid-template-columns: 1fr 2fr;
+}
+
+.filter {
+  display: grid;
+  grid-area: filter;
+}
+
+.sorter {
+  display: grid;
+  grid-area: sorter;
+  grid-template-columns: 1fr 1fr;
+}
+
+.catalog {
+  display: grid;
+  grid-area: catalog;
+}
 
 .grid-list {
     list-style: none;
@@ -343,7 +424,14 @@ img {
 
 .catalog-list {
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
+
+.catalog-list__item {
+  border-radius: 5px;
+} 
 
 .pages-list {
     list-style: none;
