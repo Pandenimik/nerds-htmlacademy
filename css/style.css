@@ -557,6 +557,15 @@ img {
   margin-bottom: 60px;
 }
 
+/* Фильтры */
+/* Общие стили фильтров */
+
+legend {
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .filter {
   grid-area: filter;
   display: flex;
@@ -571,6 +580,8 @@ img {
   padding: 0;
   margin-bottom: 50px;
 }
+
+/* Фильтр "Стоимость" */
 
 .price-filter__legend {
   margin-bottom: 48px;
@@ -632,14 +643,10 @@ img {
   margin-left: 7px;
 }
 
+/* Фильтр "Выбор сетки" (радио-кнопки) */
+
 .layout-list {
   list-style: none;
-}
-
-legend {
-  margin-bottom: 16px;
-  font-weight: bold;
-  font-size: 18px;
 }
 
 .layout-item {
@@ -649,6 +656,63 @@ legend {
 .layout-item:last-child {
   margin-bottom: 0;
 }
+
+.layout-label {
+  padding-left: 36px;
+  display: flex;
+  align-items: center;
+}
+
+/* Кастомный radio-input */
+
+.layout-input__radio {
+  position: absolute;
+  margin-left: -36px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/radio/radio-off.svg);
+}
+.layout-input:hover + .layout-input__radio {
+  position: absolute;
+  margin-left: -36px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/radio/radio-off-hover.svg);
+}
+
+.layout-input:checked:hover + .layout-input__radio {
+  position: absolute;
+  margin-left: -36px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/radio/radio-on-hover.svg);
+}
+
+.layout-input:checked + .layout-input__radio {
+  position: absolute;
+  margin-left: -36px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/radio/radio-on.svg);
+}
+
+.layout-input:disabled + .layout-input__radio {
+  position: absolute;
+  margin-left: -36px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/radio/radio-off-disabled.svg);
+}
+
+.layout-input:checked:disabled + .layout-input__radio {
+  position: absolute;
+  margin-left: -36px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/radio/radio-on-disabled.svg);
+}
+
+/* Фильтр "Особенности" (чек-боксы) */
 
 .features-list {
   list-style: none;
@@ -661,6 +725,70 @@ legend {
 .features-item:last-child {
   margin-bottom: 0;
 }
+
+.features-label {
+  padding-left: 38px;
+  display: flex;
+  align-items: center;
+}
+
+/* Кастомные чекбоксы фильтра "Особенности" */
+
+.features-input__checkbox {
+  position: absolute;
+  margin-left: -38px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/checkboxes/checkbox-off.svg);
+  background-repeat: no-repeat;
+}
+
+.features-input:checked + .features-input__checkbox {
+  position: absolute;
+  margin-left: -38px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/checkboxes/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
+.features-input:hover + .features-input__checkbox {
+  position: absolute;
+  margin-left: -38px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/checkboxes/checkbox-off-hover.svg);
+  background-repeat: no-repeat;
+}
+
+.features-input:checked:hover + .features-input__checkbox {
+  position: absolute;
+  margin-left: -38px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/checkboxes/checkbox-on-hover.svg);
+  background-repeat: no-repeat;
+}
+
+.features-input:disabled + .features-input__checkbox {
+  position: absolute;
+  margin-left: -38px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/checkboxes/checkbox-off-disabled.svg);
+  background-repeat: no-repeat;
+}
+
+.features-input:checked:disabled + .features-input__checkbox {
+  position: absolute;
+  margin-left: -38px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/checkboxes/checkbox-on-disabled.svg);
+  background-repeat: no-repeat;
+}
+
+/* Сортировка (по цене, по типу, по названию, по уменьшению , по увеличению) */
 
 .sorter {
   display: grid;
@@ -679,6 +807,8 @@ legend {
   display: flex;
   justify-content: space-between;
 }
+
+/* Стили раздела "Каталог" */
 .catalog {
   display: grid;
   grid-area: catalog;

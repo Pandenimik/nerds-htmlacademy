@@ -172,86 +172,116 @@
               <legend>СЕТКА:</legend>
               <ul class="layout-list">
                 <li class="layout-item">
-                  <label class="layout-label"
-                    ><input
-                      class="layout-radio"
+                  <label class="layout-label">
+                    <input
+                      class="layout-input visually-hidden"
                       type="radio"
                       name="layout-radio"
                       value="adaptive"
                       checked
                     />
-                    Адаптивная</label
-                  >
+                    <span class="layout-input__radio"></span>
+                    Адаптивная
+                  </label>
                 </li>
                 <li class="layout-item">
-                  <label class="layout-label"
-                    ><input
-                      class="layout-radio"
+                  <label class="layout-label">
+                    <input
+                      class="layout-input visually-hidden"
                       type="radio"
                       name="layout-radio"
                       value="fixed"
                     />
-                    Фиксированная</label
-                  >
+                    <span class="layout-input__radio"></span>
+                    Фиксированная
+                  </label>
                 </li>
                 <li class="layout-item">
-                  <label class="layout-label"
-                    ><input
-                      class="layout-radio"
+                  <label class="layout-label" disabled>
+                    <input
+                      class="layout-input visually-hidden"
                       type="radio"
                       name="layout-radio"
                       value="rubber"
+                      disabled
                     />
-                    Резиновая</label
-                  >
+                    <span class="layout-input__radio"></span>
+                    Резиновая
+                  </label>
                 </li>
               </ul>
             </fieldset>
+
             <fieldset class="features-filter">
               <legend>ОСОБЕННОСТИ:</legend>
               <ul class="features-list">
+                
                 <li class="features-item">
-                  <label
-                    ><input
-                      class="checkbox"
+                  <label class="features-label">
+                    <input
+                      class="features-input visually-hidden"
                       type="checkbox"
                       name="slider"
                       checked
                     />
-                    Слайдер</label
-                  ><br />
+                    <span class="features-input__checkbox"></span>
+                    Слайдер
+                  </label>
                 </li>
+                
                 <li class="features-item">
-                  <label
-                    ><input class="checkbox" type="checkbox" name="block" />
-                    Блок преимуществ</label
-                  ><br />
+                  <label class="features-label">
+                    <input 
+                      class="features-input visually-hidden" 
+                      type="checkbox" 
+                      name="block" 
+                    />
+                    <span class="features-input__checkbox"></span>
+                    Блок преимуществ
+                  </label>
                 </li>
+                
                 <li class="features-item">
-                  <label
-                    ><input
-                      class="checkbox"
+                  <label class="features-label">
+                    <input
+                      class="features-input visually-hidden"
                       type="checkbox"
                       name="news"
                       checked
+                      disabled
                     />
-                    Новости</label
-                  >
+                    <span class="features-input__checkbox"></span>
+                    Новости
+                  </label>
                 </li>
+
                 <li class="features-item">
-                  <label
-                    ><input class="checkbox" type="checkbox" name="galery" />
-                    Галерея</label
-                  ><br />
+                  <label class="features-label">
+                    <input 
+                      class="features-input visually-hidden" 
+                      type="checkbox" 
+                      name="galery"
+                      disabled 
+                    />
+                    <span class="features-input__checkbox"></span>
+                    Галерея
+                  </label>
                 </li>
+
                 <li class="features-item">
-                  <label
-                    ><input class="checkbox" type="checkbox" name="busket" />
-                    Корзина</label
-                  >
+                  <label class="features-label">
+                    <input 
+                      class="features-input visually-hidden" 
+                      type="checkbox" 
+                      name="busket" 
+                    />
+                    <span class="features-input__checkbox"></span>
+                    Корзина
+                  </label>
                 </li>
               </ul>
             </fieldset>
+
             <input class="filter-button" type="submit" value="ПОКАЗАТЬ" />
           </form>
         </section>
