@@ -138,22 +138,33 @@
           >
             <fieldset class="price-filter">
               <legend class="price-filter__legend">СТОИМОСТЬ:</legend>
-              <div class="price-range-wrapper">
-                <input
-                  class="price-range"
-                  id="price-slider"
-                  type="range"
-                  min="0"
-                  max="15000"
-                  step="1"
-                />
+              <div class="price-range">
+                <div class="price-range__scale">
+                  <div 
+                    class="price-range__bar" 
+                    style="width: 30%; margin-left: 20%"
+                  >
+                  </div>
+                </div>
+                <div 
+                  class="price-range__toggle price-range__toggle-min"
+                  tabindex="0" 
+                  style="left: 20%"
+                >
+                </div>
+                <div 
+                  class="price-range__toggle price-range__toggle-max" 
+                  tabindex="0" 
+                  style="left: 50%"
+                >
+                </div>
               </div>
               <div class="price-input-wrapper">
                 <label class="price-label"
                   >ОТ
                   <input
                     class="price-input"
-                    type="text"
+                    type="number"
                     name="lowest-price"
                     value="0"
                 /></label>
@@ -161,7 +172,7 @@
                   >ДО
                   <input
                     class="price-input"
-                    type="text"
+                    type="number"
                     name="highest-price"
                     value="15000"
                 /></label>

@@ -18,6 +18,9 @@
   --active-grey: #d5d5d5;
   --focus-grey: #dbdbdb;
   --opacity-grey-text: rgba(0, 0, 0, 0.3);
+  --price-scale-color: #d7dcdf;
+  --price-bar-color: #00ca74;
+  --price-toggle-center-color: #ababab;
 }
 .page {
   height: 100%;
@@ -589,43 +592,53 @@ legend {
   font-size: 18px;
 }
 
-.price-range-wrapper {
-  width: 260px;
-  height: 80px;
+/* Оформляем раздел с "бегунками" */
+
+.price-range {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: var(--basic-grey);
-  display: flex;
   margin-bottom: 14px;
   border-radius: 3px;
 }
 
-.price-range {
-  margin: auto;
-  width: 205px;
-  background-color: var(--basic-grey);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.price-range::-moz-range-track {
+.price-range__scale {
   height: 2px;
-  background-color: var(--basic-green);
+  background: var(--price-scale-color);
 }
 
-.price-range::-moz-range-thumb {
-  background: var(--basic-white);
+.price-range__bar {
+  width: 70%;
+  height: 2px;
+  background: var(--price-bar-color);
+}
+
+.price-range__toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--price-toggle-center-color);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
 }
 
-.price-range::-webkit-slider-runnable-track {
-  height: 2px;
-  background-color: var(--basic-green);
+.price-range__toggle-min {
+  left: 18px;
 }
 
-.price-range::-webkit-slider-thumb {
-  background: var(--basic-white);
-  cursor: pointer;
+.price-range__toggle-max {
+  left: 160px;
 }
+
+/* Оформляем раздел инпутов с ценами От и До */
 
 .price-input-wrapper {
   display: flex;
