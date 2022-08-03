@@ -128,8 +128,8 @@
       <h1 class="visually-hidden">Интернет-магазин Нёрдс</h1>
       <section class="slider">
         <h2 class="visually-hidden">Баннер</h2>
-        <div class="center">
-          <div class="slider-1">
+        <ul class="slider__list center">
+          <li class="slider__item current slider-1">
             <p>
               <span
                 >Долго, дорого,<br />
@@ -141,9 +141,9 @@
               для вашего сайта или мобильного приложения.
             </p>
             <input class="button" type="button" value="УЗНАТЬ БОЛЬШЕ" />
-          </div>
+          </li>
 
-          <div class="slider-2 visually-hidden">
+          <li class="slider__item slider-2">
             <p>
               <span
                 >Любим математику<br />
@@ -155,9 +155,9 @@
               для расчета идеальных пропорций
             </p>
             <input class="button" type="button" value="УЗНАТЬ БОЛЬШЕ" />
-          </div>
+          </li>
 
-          <div class="slider-3 visually-hidden">
+          <li class="slider__item slider-3">
             <p>
               <span
                 >Только ночь,<br />
@@ -169,7 +169,12 @@
               Ближе к полуночи работа только начинается.
             </p>
             <input class="button" type="button" value="УЗНАТЬ БОЛЬШЕ" />
-          </div>
+          </li>
+        </ul>
+        <div class="slider__controls">
+          <button class="slider__button current" type="button" aria-label="Первый слайд"></button>
+          <button class="slider__button" type="button" aria-label="Второй слайд"></button>
+          <button class="slider__button" type="button" aria-label="Третий слайд"></button>
         </div>
       </section>
 

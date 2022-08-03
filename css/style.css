@@ -220,6 +220,8 @@ img {
 /* Cлайдер */
 
 .slider {
+  position: relative;
+  min-height: 150px;
   background-color: var(--basic-grey);
   margin-bottom: 80px;
   display: flex;
@@ -228,9 +230,17 @@ img {
   align-items: flex-start;
 }
 
-.slider-1,
-.slider-2,
-.slider-3 {
+.slider__list {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item.current {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,6 +276,40 @@ img {
   line-height: 55px;
   color: var(--basic-black);
 }
+
+.slider__controls {
+  position: absolute;
+  bottom: 96px;
+  left: 48%;
+  z-index: 20;
+  padding: 0;
+  width: 88px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__button.current {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-white);
+  background-image: url(/img/slider-current-button.svg);
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 
 /* Основные свойсвта кнопок */
 
@@ -633,7 +677,7 @@ legend {
 
 .price-range {
   position: relative;
-  height: 41px;
+  height: 80px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -657,8 +701,8 @@ legend {
   position: absolute;
   top: 31px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   border: 8px solid var(--basic-white);
   background-color: var(--price-toggle-center-color);
@@ -880,6 +924,7 @@ legend {
   background-color: var(--basic-grey);
   display: grid;
   grid-template-areas: catalog-item;
+  position: relative;
 }
 
 .catalog-list__item:hover {
@@ -889,6 +934,27 @@ legend {
 
 .catalog-list__item:hover .item-card {
   display: flex;
+}
+
+.item-controls {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+  z-index: 20;
+  padding: 0;
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-controls__button {
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  background-color: var(--basic-white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .item-img {
