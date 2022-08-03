@@ -766,6 +766,15 @@ legend {
   height: 25px;
   background-image: url(/img/radio/radio-off.svg);
 }
+
+.layout-input:checked + .layout-input__radio {
+  position: absolute;
+  margin-left: -36px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/radio/radio-on.svg);
+}
+
 .layout-input:hover + .layout-input__radio {
   position: absolute;
   margin-left: -36px;
@@ -782,13 +791,6 @@ legend {
   background-image: url(/img/radio/radio-on-hover.svg);
 }
 
-.layout-input:checked + .layout-input__radio {
-  position: absolute;
-  margin-left: -36px;
-  width: 25px;
-  height: 25px;
-  background-image: url(/img/radio/radio-on.svg);
-}
 
 .layout-input:disabled + .layout-input__radio {
   position: absolute;
@@ -1024,7 +1026,6 @@ legend {
 .filter-button:active {
   background-color: var(--active-grey);
   color: var(--opacity-grey-text);
-  box-shadow: 0 -2px var(--opacity-grey-text);
-  border-top: 0 solid var(--opacity-grey-text);
+  border-top: 2px solid var(--opacity-grey-text);
   align-self: flex-end;
 }
