@@ -544,5 +544,28 @@
         <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+
+    <section class="modal email-modal visually-hidden">
+      <h2 class="email-modal__header">Напишите нам</h2>
+      <form class="email-form" action="https://echo.htmlacademy.ru" method="post">
+        <div>
+          <label class="email-form__label" for="user-name-input">Ваше имя:</label><br>
+          <input class="user-name-input" id="user-name-input" type="text" name="user-name-input" placeholder="Имя Фамилия">
+        </div>
+        
+        <div>
+          <label class="email-form__label" for="user-email-input">Ваш email:</label><br>
+          <input class="user-email-input" id="user-email-input" type="email" name="user-email-input" placeholder="email@example.com">
+        </div>
+        
+        <div>
+          <label class="email-form__label" for="user-text">Текст письма:</label><br>
+          <textarea class="user-text" id="user-text" type="password" name="user-text" placeholder="В свободной форме"></textarea>
+        </div>          
+        <button class="button email-form__button" type="submit">Отправить</button>
+      </form>
+      <button class="close-modal" type="button" aria-label="Закрыть"></button>
+    </section>
+
   </body>
 </html>
