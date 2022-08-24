@@ -1090,6 +1090,8 @@ legend {
 .pages-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .pages-list-button,
@@ -1140,7 +1142,11 @@ legend {
 .clients-page-header {
   font-size: 65px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
-  border-bottom: 1px solid var(--basic-grey);
+  background-image: linear-gradient(to bottom, var(--basic-grey), var(--basic-white));
+}
+
+.clients-page-section {
+  border-top: 1px solid var(--basic-grey);
 }
