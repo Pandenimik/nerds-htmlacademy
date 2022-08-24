@@ -540,6 +540,8 @@ img {
 .map-place {
   grid-area: contacts;
   margin: 0;
+  background-image: url(/img/contacts/map.png);
+  background-repeat: no-repeat;
 }
 
 .social-logo-list {
@@ -1132,4 +1134,13 @@ legend {
   color: var(--opacity-grey-text);
   border-top: 2px solid var(--opacity-grey-text);
   align-self: flex-end;
+}
+
+/* Страница Клиенты */
+.clients-page-header {
+  font-size: 65px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--basic-grey);
 }
