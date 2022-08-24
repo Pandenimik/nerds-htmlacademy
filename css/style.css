@@ -619,6 +619,110 @@ img {
   opacity: 30%;
 }
 
+/* Оформление модальных окон */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 960px;
+  height: 590px;
+  padding: 65px 100px 85px 100px;
+  background-color: var(--basic-white);
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.25);
+  z-index: 2000;
+}
+
+.email-modal__header {
+  font-size: 45px;
+  margin-bottom: 37px;
+}
+
+.email-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.email-form__label {
+  display: inline-block;
+
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.user-name-input,
+.user-email-input {
+  width: 360px;
+  height: 50px;
+  padding: 15px;
+  margin-bottom: 34px;
+  border: 1px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.user-name-input:hover,
+.user-email-input:hover {
+  border-color: #b4b9bb;
+}
+
+.user-name-input:focus,
+.user-email-input:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.user-text {
+  width: 760px;
+  height: 118px;
+  padding: 15px;
+  resize: none;
+  margin-bottom: 47px;
+  border: 1px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.user-text:hover {
+  border-color: #b4b9bb;
+}
+
+.user-text:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.email-form__button {
+  width: 250px;
+  height: 50px;
+  text-transform: uppercase;
+}
+
+.close-modal {
+  position: absolute;
+  top: 65px;
+  right: 100px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  background-image: url(/img/modal/close-cross.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  background-image: url(/img/modal/close-cross-hover.svg);
+}
+
+.close-modal:active {
+  background-image: url(/img/modal/close-cross-active.svg);
+}
+
 /* Дальше идет оформление catalog.html */
 .catalog-header {
   text-align: center;
