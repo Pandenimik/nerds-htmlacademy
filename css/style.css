@@ -248,6 +248,10 @@ img {
   min-height: 430px;
 }
 
+.slider__item.current p {
+  max-width: 35%;
+}
+
 .slider-1 {
   background-image: url(../img/index-slide1.png);
   background-repeat: no-repeat;
@@ -283,9 +287,10 @@ img {
   left: 48%;
   z-index: 20;
   padding: 0;
-  width: 88px;
+  width: auto;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .slider__button {
@@ -309,7 +314,6 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
-
 
 /* Основные свойсвта кнопок */
 
@@ -345,6 +349,7 @@ img {
   padding: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
   margin-bottom: 60px;
 }
 
@@ -514,7 +519,7 @@ img {
 .contacts-card {
   background-color: var(--basic-white);
   width: 319px;
-  height: 308px;
+  min-height: 308px;
   box-sizing: border-box;
   grid-area: contacts;
   z-index: 1;
@@ -549,6 +554,7 @@ img {
   padding: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
 }
 
 .social-logo-item {
@@ -898,7 +904,6 @@ legend {
   background-image: url(/img/radio/radio-on-hover.svg);
 }
 
-
 .layout-input:disabled + .layout-input__radio {
   position: absolute;
   margin-left: -36px;
@@ -1147,7 +1152,11 @@ legend {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image: linear-gradient(to bottom, var(--basic-grey), var(--basic-white));
+  background-image: linear-gradient(
+    to bottom,
+    var(--basic-grey),
+    var(--basic-white)
+  );
 }
 
 .clients-page-section {
