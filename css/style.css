@@ -745,6 +745,7 @@ img {
     'filter catalog';
   grid-template-columns: 1fr 2fr;
   margin-bottom: 60px;
+  column-gap: 30px;
 }
 
 /* Фильтры */
@@ -1008,6 +1009,7 @@ legend {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* Стили раздела "Каталог" */
@@ -1068,6 +1070,7 @@ legend {
 .item-img {
   grid-area: catalog-item;
   margin-top: auto;
+  object-fit: contain;
 }
 
 .item-card {
