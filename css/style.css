@@ -888,7 +888,8 @@ legend {
   background-image: url(/img/radio/radio-on.svg);
 }
 
-.layout-input:hover + .layout-input__radio {
+.layout-input:hover + .layout-input__radio,
+.layout-input:focus + .layout-input__radio {
   position: absolute;
   margin-left: -36px;
   width: 25px;
@@ -896,7 +897,8 @@ legend {
   background-image: url(/img/radio/radio-off-hover.svg);
 }
 
-.layout-input:checked:hover + .layout-input__radio {
+.layout-input:checked:hover + .layout-input__radio,
+.layout-input:checked:focus + .layout-input__radio {
   position: absolute;
   margin-left: -36px;
   width: 25px;
@@ -960,7 +962,8 @@ legend {
   background-repeat: no-repeat;
 }
 
-.features-input:hover + .features-input__checkbox {
+.features-input:hover + .features-input__checkbox,
+.features-input:focus + .features-input__checkbox {
   position: absolute;
   margin-left: -38px;
   width: 25px;
@@ -969,7 +972,8 @@ legend {
   background-repeat: no-repeat;
 }
 
-.features-input:checked:hover + .features-input__checkbox {
+.features-input:checked:hover + .features-input__checkbox,
+.features-input:checked:focus + .features-input__checkbox {
   position: absolute;
   margin-left: -38px;
   width: 25px;
