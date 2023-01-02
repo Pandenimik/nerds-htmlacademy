@@ -642,9 +642,18 @@ img {
   background-color: var(--basic-white);
   box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.25);
   z-index: 2000;
+  display: none;
 }
 
-.email-modal__header {
+.modal_show {
+  display: block;
+}
+
+.modal_error {
+  animation: shake 0.6s;
+}
+
+.modal__header {
   font-size: 45px;
   margin-bottom: 37px;
 }
@@ -1165,4 +1174,28 @@ legend {
 
 .clients-page-section {
   border-top: 1px solid var(--basic-grey);
+}
+
+/* Animations */
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
