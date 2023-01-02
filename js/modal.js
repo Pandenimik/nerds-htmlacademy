@@ -31,13 +31,13 @@ openEmailFormButton.addEventListener('click', function (event) {
     } else {
       userName.focus();
     }
-  } 
+  }
 });
 
 closeEmailFormButton.addEventListener('click', function (event) {
   event.preventDefault();
   emailModal.classList.remove('modal_show');
-  emailModal.classList.remove("modal_error");
+  emailModal.classList.remove('modal_error');
 });
 
 emailForm.addEventListener('submit', function (event) {
@@ -59,10 +59,10 @@ emailForm.addEventListener('submit', function (event) {
 
 window.addEventListener('keydown', function (event) {
   if (event.keyCode === 27) {
-    if (emailModal.classList.contains("modal_show")) {
+    if (emailModal.classList.contains('modal_show')) {
       event.preventDefault();
-      emailModal.classList.remove("modal_show");
-      emailModal.classList.remove("modal_error");   
+      emailModal.classList.remove('modal_show');
+      emailModal.classList.remove('modal_error');
     }
   }
 });
@@ -74,6 +74,6 @@ window.addEventListener('click', function (e) {
   const emailModalIsActive = emailModal.classList.contains('modal_show');
   if (!itsEmailModal && !itsOpenEmailFormButton && emailModalIsActive) {
     emailModal.classList.remove('modal_show');
-    emailModal.classList.remove("modal_error");
+    emailModal.classList.remove('modal_error');
   }
 });
